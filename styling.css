@@ -1,0 +1,281 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root {
+    --navbar-height: 59px;
+}
+
+html{
+    /* scroll-behavior: smooth; */
+}
+
+#navbar {
+    
+    position: sticky;
+    display: flex;
+    font-family: 'Rubik Wet Paint', cursive;
+    top: 0px;
+
+
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* top: 0px;
+    left: 0px; */
+    opacity: 0.5;
+    z-index: -1;
+
+}
+
+#logo img {
+    /* width: 150px; */
+    margin: 3px 6px;
+    height: 59px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+    margin: 8px;
+
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    display: block;
+    margin: 4px;
+    padding: 6px;
+}
+
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+#home {
+    display: flex;
+    height: 337px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+}
+
+#home::before {
+    content: "";
+    background: url(https://images.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    /*highly important to fix this margin to avoid problems*/
+    left: 0px;
+    height: 403px;
+    /* height: 109%; */
+    width: 100%;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+/* .h-prim {
+    font-size: 3.8rem;
+    padding: 12px;
+} */
+
+#home h1 {
+    color: white;
+    font-family: 'Rubik Moonrocks', cursive;
+    text-align: center;
+    position: relative;
+    top: -20px;
+}
+
+#home p {
+    color: rgb(107, 46, 46);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Rubik Wet Paint', cursive;
+}
+
+.btn {
+    padding: 20px;
+    border: 2px black solid;
+    border-radius: 20px;
+    background-color: red;
+    font-size: 1.5rem;
+    font-family: 'Rubik Wet Paint', cursive;
+    transition: all 0.5s ease-in-out .3s;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+#services {
+    margin: -13px;
+    display: flex;
+    margin-bottom: 0px;
+
+}
+
+#services .box {
+    border: 2px solid maroon;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(233, 225, 225);
+}
+
+#services .box img {
+    border: 2px solid maroon;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.h-primary center {
+    display: block;
+    margin: auto;
+}
+
+.services-container h1 {
+    font-family: 'Rubik Moonrocks', cursive;
+
+    text-align: center;
+    color: brown;
+    font-size: 2.3rem;
+}
+
+.services-container #services .box h2 {
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+
+    color: rgb(57, 23, 23);
+    font-size: 1.1rem;
+}
+
+.services-container #services .box p {
+    text-align: center;
+    color: rgb(31, 5, 5);
+    padding: 2px;
+    font-size: 1rem;
+}
+
+/* Clients section */
+
+#client-section {
+    margin-bottom: 20px;
+    /* height: 165px;    not giving custom height so that it it automaticallly adjusts height in responsive design based on items*/
+
+    position: relative;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80) no-repeat center center/cover;
+    opacity: 0.33 ;
+}
+
+#client-section h1 {
+    position: relative;
+    top: 12px;
+    text-align: center;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+}
+
+#clients .client-item img {
+    width: 90px;
+    height: 70px;
+    margin: 20px;
+}
+
+/* contact us section */
+
+#contact{
+    position: relative;
+    height: 300px;
+    
+    top: 0px;
+    left: 0px;
+}
+#contact::before{
+    content: "";
+    background: url(https://static1.bigstockphoto.com/2/7/2/large1500/272265343.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+#contact h1{
+    text-align: center;
+    color: rgb(30, 1, 1);
+    font-size: 2rem;
+    font-style: inherit;
+}
+
+#contact form{
+    display: flex;
+    width: 20%;
+    height: 10%;
+    flex-direction: column;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-box input{
+    border-radius: 6px;
+    padding: 5px 2px;
+    width: 400px;
+}
+.contact-box label{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#contact form textarea{
+    padding: 5px 2px;
+    border-radius: 6px;
+    width: 291px;
+    height: 80px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 2px 20px;
+}
+.center{
+    text-align: center;
+}
+
+
+

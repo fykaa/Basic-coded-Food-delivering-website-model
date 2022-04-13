@@ -1,0 +1,42 @@
+
+/* navigation bar */
+
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    height: 120px;
+    flex-direction: column;
+    display: flex;
+}
+
+#home{
+    height: 400px;
+    padding: 2px;
+}
+#home p{
+    font-size: medium;
+}
+#home::before{
+    width: 100%;
+    height: 500px;
+
+}
+#services{
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+}
+
+#clients{
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.contact-box input{
+    /* width: 100px; */
+    width: 10rem;
+}
+
+#contact form textarea{
+    width: 100px;
+    height: 60px;
+}
